@@ -2,6 +2,8 @@ package com.bridgelabz;
 
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.assertEquals;
+
 public class Validate {
 
 
@@ -33,7 +35,7 @@ public class Validate {
     @Test
     public void test2() {
         //getting boolean result by calling method of UserRegistration Class
-        Boolean lastname = UserRegistration.lname("Prasad");
+        Boolean lastname = UserRegistration.lname("Panika");
         //Getting Exception
         try {
             if (lastname == true) {
@@ -55,7 +57,7 @@ public class Validate {
     @Test
     public void test3() {
         //getting boolean result by calling method of UserRegistration Class
-        Boolean email = UserRegistration.email("chandra53@bl.co.in");
+        Boolean email = UserRegistration.email("amitpanika97@gmail.com");
         //Getting Exception
         try {
             if (email == true) {
@@ -99,7 +101,7 @@ public class Validate {
     @Test
     public void test5() {
         //getting boolean result by calling method of UserRegistration Class
-        Boolean output = UserRegistration.password("Chandra@2453");
+        Boolean output = UserRegistration.password("Amit@123");
         //Getting Exception
         try {
             if (output == true) {
